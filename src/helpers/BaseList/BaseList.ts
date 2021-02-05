@@ -1,4 +1,4 @@
-import ApolloClient, { ApolloQueryResult } from "apollo-client";
+import ApolloClient from "apollo-client";
 import { PageInfo } from "../../fragments/gqlTypes/PageInfo";
 import {
   GetBaseList,
@@ -6,13 +6,14 @@ import {
   BaseListVariables,
   GetPageInfo,
   GetTotalCount,
+  GetBaseListResult,
 } from "./types";
 
 abstract class BaseList<TQuery, TObject, TVariables extends BaseListVariables> {
   /**
    * Awaitable promise of the current query
    */
-  current: Promise<ApolloQueryResult<TQuery>> | null = null;
+  current: GetBaseListResult<TQuery> | null = null;
 
   /**
    * Apollo client

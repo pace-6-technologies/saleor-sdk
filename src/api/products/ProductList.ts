@@ -1,3 +1,4 @@
+import { ApolloQueryResult } from "apollo-client";
 import BaseList, {
   GetPageInfo,
   GetTotalCount,
@@ -26,9 +27,22 @@ export class ProductList extends BaseList<
     ProductList_products_edges_node
   > = data => data.products?.edges.map(({ node }) => node);
 
-  query = (variables: ProductListVariables) =>
-    this.client!.query<ProductListQuery, ProductListVariables>({
-      query: productList,
-      variables,
+  query = async (variables: ProductListVariables) =>
+    new Promise<ApolloQueryResult<ProductListQuery>>((resolve, reject) => {
+      const observableQuery = this.client!.watchQuery<
+        ProductListQuery,
+        ProductListVariables
+      >({
+        query: productList,
+        variables,
+      });
+
+      observableQuery.subscribe({
+        error: e => reject(e),
+        next: result => {
+          console.log(this);
+          resolve(result);
+        },
+      });
     });
 }

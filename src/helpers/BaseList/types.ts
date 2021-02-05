@@ -1,9 +1,13 @@
 import { ApolloQueryResult } from "apollo-client";
 import { PageInfo } from "../../fragments/gqlTypes/PageInfo";
 
+export type GetBaseListResult<TQuery> =
+  | Promise<ApolloQueryResult<TQuery>>
+  | PromiseLike<ApolloQueryResult<TQuery>>;
+
 export type GetBaseList<TQuery, TVariables> = (
   variables: TVariables
-) => Promise<ApolloQueryResult<TQuery>>;
+) => GetBaseListResult<TQuery>;
 
 export type MapQueryData<TQuery, TObject> = (
   data: TQuery
