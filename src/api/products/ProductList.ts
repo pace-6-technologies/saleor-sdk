@@ -39,7 +39,7 @@ export class ProductList extends BaseList<
 
       observableQuery.subscribe({
         error: e => reject(e),
-        next: result => {
+        next(result) {
           console.log(this);
           resolve(result);
         },
