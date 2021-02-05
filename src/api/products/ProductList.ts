@@ -37,11 +37,10 @@ export class ProductList extends BaseList<
         variables,
       });
 
-      observableQuery
-        .subscribe({
-          error: e => reject(e),
-          next: result => resolve(result),
-        })
-        .unsubscribe();
+      observableQuery.subscribe({
+        error: e => reject(e),
+        next: result => resolve(result),
+      });
+      // .unsubscribe();
     });
 }
