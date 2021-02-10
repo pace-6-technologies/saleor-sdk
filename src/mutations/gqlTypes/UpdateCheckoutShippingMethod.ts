@@ -105,6 +105,7 @@ export interface UpdateCheckoutShippingMethod_checkoutShippingMethodUpdate_check
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.
@@ -146,6 +147,7 @@ export interface UpdateCheckoutShippingMethod_checkoutShippingMethodUpdate_check
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.

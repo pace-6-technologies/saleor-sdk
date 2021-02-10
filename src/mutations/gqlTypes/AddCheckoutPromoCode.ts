@@ -105,6 +105,7 @@ export interface AddCheckoutPromoCode_checkoutAddPromoCode_checkout_billingAddre
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.
@@ -146,6 +147,7 @@ export interface AddCheckoutPromoCode_checkoutAddPromoCode_checkout_shippingAddr
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.

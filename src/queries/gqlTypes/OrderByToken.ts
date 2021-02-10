@@ -33,6 +33,7 @@ export interface OrderByToken_orderByToken_shippingAddress {
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.

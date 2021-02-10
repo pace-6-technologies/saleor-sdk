@@ -59,6 +59,7 @@ export interface ICheckoutAddress {
   streetAddress1?: string;
   streetAddress2?: string;
   city?: string;
+  cityArea?: string;
   postalCode?: string;
   countryArea?: string;
   phone?: string | null;

@@ -105,6 +105,7 @@ export interface CreateCheckoutPayment_checkoutPaymentCreate_checkout_billingAdd
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.
@@ -146,6 +147,7 @@ export interface CreateCheckoutPayment_checkoutPaymentCreate_checkout_shippingAd
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.

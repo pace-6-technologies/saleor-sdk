@@ -487,6 +487,7 @@ export interface PaymentInput {
   gateway: string;
   token?: string | null;
   amount?: any | null;
+  billingAddress?: AddressInput | null;
   returnUrl?: string | null;
 }
 

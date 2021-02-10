@@ -50,6 +50,7 @@ export interface AccountUpdate_accountUpdate_user_defaultShippingAddress {
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.
@@ -91,6 +92,7 @@ export interface AccountUpdate_accountUpdate_user_defaultBillingAddress {
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.
@@ -132,6 +134,7 @@ export interface AccountUpdate_accountUpdate_user_addresses {
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.

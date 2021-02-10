@@ -122,6 +122,7 @@ export interface UpdateCheckoutShippingAddress_checkoutShippingAddressUpdate_che
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.
@@ -163,6 +164,7 @@ export interface UpdateCheckoutShippingAddress_checkoutShippingAddressUpdate_che
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.
@@ -717,6 +719,7 @@ export interface UpdateCheckoutShippingAddress_checkoutEmailUpdate_checkout_bill
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.
@@ -758,6 +761,7 @@ export interface UpdateCheckoutShippingAddress_checkoutEmailUpdate_checkout_ship
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.

@@ -483,6 +483,7 @@ export class ApolloClientManager {
         checkoutInput: {
           billingAddress: billingAddress && {
             city: billingAddress.city,
+            cityArea: billingAddress.cityArea,
             companyName: billingAddress.companyName,
             country:
               CountryCode[
@@ -501,6 +502,7 @@ export class ApolloClientManager {
           lines,
           shippingAddress: shippingAddress && {
             city: shippingAddress.city,
+            cityArea: shippingAddress.cityArea,
             companyName: shippingAddress.companyName,
             country:
               CountryCode[
@@ -608,6 +610,7 @@ export class ApolloClientManager {
         email,
         shippingAddress: {
           city: shippingAddress.city,
+          cityArea: shippingAddress.cityArea,
           companyName: shippingAddress.companyName,
           country:
             CountryCode[
@@ -668,6 +671,7 @@ export class ApolloClientManager {
       const variables = {
         billingAddress: {
           city: billingAddress.city,
+          cityArea: billingAddress.cityArea,
           companyName: billingAddress.companyName,
           country:
             CountryCode[
@@ -725,6 +729,7 @@ export class ApolloClientManager {
       const variables = {
         billingAddress: {
           city: billingAddress.city,
+          cityArea: billingAddress.cityArea,
           companyName: billingAddress.companyName,
           country:
             CountryCode[

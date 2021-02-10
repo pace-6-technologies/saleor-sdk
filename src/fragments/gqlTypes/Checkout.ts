@@ -103,6 +103,7 @@ export interface Checkout_billingAddress {
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.
@@ -144,6 +145,7 @@ export interface Checkout_shippingAddress {
   streetAddress1: string;
   streetAddress2: string;
   city: string;
+  cityArea: string;
   postalCode: string;
   /**
    * Shop's default country.
